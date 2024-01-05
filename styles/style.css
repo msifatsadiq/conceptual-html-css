@@ -10,6 +10,8 @@
     background-size: cover;
     background-position: bottom center;
     height: 100vh;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 72% 100%, 25% 100%, 0% 50%);
+
 }
 .hero h1{
     color: rgb(110, 185, 185);
@@ -22,6 +24,7 @@
     word-spacing: 20px;
     letter-spacing: 5px;
 
+
 }
 
 .article, #cow-type {
@@ -31,14 +34,11 @@
     margin-top: 60px;
     margin-bottom: 60px; */
     margin: 60px auto ;
-    border-width: 15px;
-    border-color: rgb(53, 104, 224);
-    border-style:solid ;
-    background-color: rgb(155, 237, 237);
-    padding: 60px;
+    background: linear-gradient(45deg,pink, rgb(123, 114, 250));
+
 }
 
-.article h2 {
+.article h2 , #cow-type h2{
     text-align: center;
     font-size: 48px;
     border-bottom: 2px solid salmon;
@@ -54,4 +54,12 @@
     font-size: 2em;
     background-color: yellow;
 
+}
+
+#cow-type div {
+    display:flex;
+    min-width: 300px;
+    flex-direction:row;
+    gap: 20px;
+    justify-content: center;
 }
